@@ -15,7 +15,7 @@ _一次性引导。完成后删除本文件。_
 ### 1. 查询自选股
 
 ```bash
-node <workspace>/skills/westock-portfolio/scripts/westock-portfolio.js watchlist list
+node <workspace>/skills/westock-portfolio/scripts/index.js watchlist list
 ```
 
 解析返回 JSON，提取去重后的股票列表（code、market、groupId）。

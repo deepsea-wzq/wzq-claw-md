@@ -52,13 +52,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ## 搜索工具顺序（固定流程）
 
-遇到需要搜索新闻/资讯的需求时，按以下顺序执行，**不要尝试不存在的工具**：
-
-1. **Fin Search**（金融场景首选）
-2. **Brave web_search** — OpenClaw 内置 `web_search` 工具 — 中英文通用（需 BRAVE_API_KEY，未配则跳过，不报错不重试）
-
-**金融场景搜索规则**：涉及股票、行业、宏观、政策等金融话题时，**优先走 Fin Search**，结果不足再用 Exa/Brave 补充。
-
+遇到需要搜索新闻/资讯的需求时，默认调用**fin-search**技能
 ---
 
 ## SkillHub 安装流程（skillhub.tencent.com）
