@@ -207,39 +207,6 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## 🧠 Self-Improvement — 持续学习
-
-每次对话中主动识别并记录经验教训，不需要用户提醒。
-
-### 触发规则（遇到就记）
-
-| 情况 | 记到哪 | 分类 |
-|------|--------|------|
-| 命令/操作执行失败 | `.learnings/ERRORS.md` | - |
-| 被用户纠正（"不对"、"其实应该…"） | `.learnings/LEARNINGS.md` | correction |
-| 用户想要但没有的功能 | `.learnings/FEATURE_REQUESTS.md` | - |
-| 外部 API/工具报错 | `.learnings/ERRORS.md` | - |
-| 发现自己知识过时或有误 | `.learnings/LEARNINGS.md` | knowledge_gap |
-| 找到比之前更好的方法 | `.learnings/LEARNINGS.md` | best_practice |
-
-### 记录要求
-- **立即记录**，上下文最新鲜的时候写
-- 格式遵循 `skills/self-improving-agent/SKILL.md` 中的模板
-- ID 格式：`TYPE-YYYYMMDD-XXX`（如 `LRN-20260310-001`）
-
-### 晋升规则
-经验被验证为广泛适用时，提炼成简洁规则写入对应文件：
-- 行为模式 → `SOUL.md`
-- 工作流改进 → `AGENTS.md`（本文件）
-- 工具踩坑 → `TOOLS.md`
-
-晋升后原条目标记 `Status: promoted`。
-
-### 维护
-- 主文件只保留 pending 条目，resolved/promoted 的定期归档
-- 重复出现的问题关联 See Also 并提升优先级
-- Heartbeat 时顺便扫一眼 .learnings/ 是否有可处理的条目
-
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
