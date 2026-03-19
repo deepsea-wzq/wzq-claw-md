@@ -50,4 +50,50 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## 搜索工具顺序（固定流程）
+
+遇到需要搜索新闻/资讯的需求时，按以下顺序执行，**不要尝试不存在的工具**：
+
+1. **Fin Search**（金融场景首选）
+2. **Brave web_search** — OpenClaw 内置 `web_search` 工具 — 中英文通用（需 BRAVE_API_KEY，未配则跳过，不报错不重试）
+
+**金融场景搜索规则**：涉及股票、行业、宏观、政策等金融话题时，**优先走 Fin Search**，结果不足再用 Exa/Brave 补充。
+
+---
+
+## SkillHub 安装流程（skillhub.tencent.com）
+
+**优先使用 SkillHub 安装技能**，替代 clawhub（clawhub 频繁 rate limit）。
+
+### CLI 安装（推荐）
+```bash
+# 安装 CLI（已装好，路径 /root/.local/bin/skillhub）
+curl -fsSL https://skillhub-1388575217.cos.ap-guangzhou.myqcloud.com/install/install.sh | bash -s -- --cli-only
+
+# 搜索
+skillhub search <关键词>
+
+# 安装到当前 workspace/skills/
+skillhub install <slug> --dir ~/.openclaw/workspace/skills
+
+# 列出已安装
+skillhub list
+
+# 升级
+skillhub upgrade
+```
+
+### 手动安装（备选，CLI 不可用时）
+- **后端 base URL**：`https://lightmake.site`
+- **Top 榜单**：`GET https://lightmake.site/api/skills/top`
+- **下载 ZIP**：`GET https://lightmake.site/api/v1/download?slug=<slug>`
+- 下载后解压到 `~/.openclaw/workspace/skills/<slug>/` 即可
+
+### 注意
+- 中国用户访问快（腾讯 CDN），无 rate limit 问题
+- 安装后建议重启 openclaw 以感知新技能
+- clawhub 作为备选，不优先使用
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
