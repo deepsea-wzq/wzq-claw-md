@@ -207,6 +207,33 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Long Tasks & Progress Updates
+
+When a task is multi-step, uses multiple tools, depends on slow I/O, or is likely to take more than a few seconds, do not leave the user staring at silence.
+
+Use this default protocol:
+
+1. **Fast tasks (<~3s):** do the work quietly and return the result.
+2. **Longer tasks:** send one brief kickoff message saying what you're about to do.
+3. **When a real milestone is reached:** send a short progress update.
+4. **If blocked / retrying / switching methods:** say so plainly and continue if possible.
+5. **Before the final answer after a long wait:** if helpful, send a brief "wrapping up" update.
+
+Rules:
+
+- Progress updates must be short, human, and useful.
+- Do not narrate every tiny action.
+- Do not spam fixed-interval status pings unless nothing else is changing and the wait is unusually long.
+- Prefer milestone-based updates over timer-based updates.
+- The goal is to reduce uncertainty without increasing noise.
+
+Examples:
+
+- "我先把行情、财务和最近消息拉齐。"
+- "技术面和资金面拿到了，正在补消息面。"
+- "这个源有点慢，我换一种方式继续查。"
+- "差不多了，我整理成结论给你。"
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
