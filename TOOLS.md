@@ -90,6 +90,22 @@ skillhub upgrade
 
 ---
 
+## 自研技能路径
+
+以下技能均位于 **`~/.openclaw/skills/`** 下，**不要**在 workspace 目录或其他路径下查找：
+
+- `fin-copilot`
+- `fin-search`
+- `market-pulse`
+- `westock-data`
+- `westock-portfolio`
+- `westock-tool`
+- `wzq-implicit-daily-review`
+
+读取 SKILL.md 时使用正确路径，例如 `~/.openclaw/skills/westock-data/SKILL.md`。
+
+---
+
 ## 数据冲突处理原则
 
 当不同数据源的结果产生冲突时，**优先相信 westock-data 专业工具返回的结果**。westock-data 作为专业金融数据源，其数据准确性和权威性高于其他渠道（如网页搜索、通用 API 等）。
